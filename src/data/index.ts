@@ -109,7 +109,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'Calculator App',
     description: 'A basic calculator app with UI built using Tkinter. Implements mathematical functions with clean UX.',
-    image: '/images/projects/calc.jpg',
+    image: '/images/projects/calc.jpeg',
     tags: ['Python', 'UI/UX', 'Tkinter', 'Maths'],
     github: '',
     link: ''
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     id: 5,
     title: 'StreetSafe',
     description: 'An IoT hardware and simulation-based project for street surveillance and safety.',
-    image: '/images/projects/streetSafe.jpg',
+    image: '/images/projects/streetSafe.png',
     tags: ['IoT Hardware', 'Simulation'],
     github: '',
     link: ''
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     id: 6,
     title: 'Disaster Management Module',
     description: 'UI/UX and CAD module designed to assist post-disaster assessment and data tracking.',
-    image: '/images/projects/disaster.jpg',
+    image: '/images/projects/dsaster.jpg',
     tags: ['UI/UX', 'CAD'],
     github: '',
     link: ''
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     id: 7,
     title: 'PrintEase (In Development)',
     description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
-    image: '/images/projects/printease.jpg',
+    image: '/images/projects/printease.png',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
     github: '',
     link: ''
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     id: 9,
     title: 'EasyAd.AI',
     description: 'An AI-powered ad generator using React and external APIs.',
-    image: '/images/projects/easyad.jpg',
+    image: '/images/projects/easyad.png',
     tags: ['React', 'API'],
     github: '',
     link: ''
