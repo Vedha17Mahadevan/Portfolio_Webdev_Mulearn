@@ -180,10 +180,11 @@ const About: React.FC = () => {
           </div>
 
           {/* Quote Section */}
-          <motion.div 
-            variants={itemVariants}
-            className="mt-20 text-center"
-          >
+         <motion.div 
+          variants={itemVariants}
+          className="mt-10 text-center"
+        >
+
             <div className="max-w-4xl mx-auto">
               <div className="relative">
                 <div className="text-6xl text-coral-200 absolute -top-8 left-0">
