@@ -85,7 +85,7 @@ const Experience: React.FC = () => {
   const getIconForRole = (title: string) => {
     if (title.includes('CTO') || title.includes('Technical')) return Zap;
     if (title.includes('Vice') || title.includes('Lead')) return Users;
-    if (title.includes('Head') || title.includes('Coordinator') || title.includes('Representative')) return Target;
+    if (title.includes('Head') || title.includes('Coordinator') || title.includes('Representative') || title.includes('Organiser')) return Target;
     return Building;
   };
 
