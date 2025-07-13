@@ -53,8 +53,8 @@ const About: React.FC = () => {
               <div className="w-12 h-1 bg-gradient-to-r from-burnt-500 to-coral-400 rounded-full"></div>
             </div>
             <h2 className="section-title text-center">
-              Crafting Digital Stories Through{' '}
-              <span className="gradient-text">Leadership & Code</span>
+              Crafting Memories Through{' '}
+              <span className="gradient-text">Experiences</span>
             </h2>
           </motion.div>
 
@@ -69,7 +69,7 @@ const About: React.FC = () => {
                 <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-coral-200/50 to-burnt-200/30 rounded-3xl"></div>
                 <div className="relative z-10 overflow-hidden rounded-3xl shadow-soft-lg">
                   <img 
-                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    src="/des.jpg" 
                     alt="Vedha Mahadevan" 
                     className="w-full h-80 object-cover"
                   />
@@ -81,14 +81,14 @@ const About: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden shadow-soft">
                   <img 
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    src="/ml.jpg" 
                     alt="Leadership moment" 
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-soft">
                   <img 
-                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    src="/dance.jpg" 
                     alt="Creative work" 
                     className="w-full h-32 object-cover"
                   />
@@ -101,15 +101,7 @@ const About: React.FC = () => {
               {/* Story */}
               <div className="prose prose-lg">
                 <p className="text-xl text-ink-700 leading-relaxed text-pretty">
-                  I'm a passionate student leader and tech enthusiast currently pursuing Computer Science Engineering 
-                  at <strong>Mar Baselios College of Engineering and Technology</strong>. My journey is a beautiful 
-                  blend of technical prowess and creative leadership.
-                </p>
-                
-                <p className="text-lg text-ink-600 leading-relaxed text-pretty">
-                  As a multifaceted individual, I balance my technical pursuits with creative endeavors and community 
-                  building. I believe in the power of collaboration to drive innovation and create meaningful impact 
-                  in the tech community.
+                  I am a motivated Computer Science student with a strong interest in coding (currently familiar with  C, Python, and Java), web development,  problem-solving, and exploring innovative technologies. Alongside my technical pursuits, I am passionate about dance and the arts, which inspire creativity and bring fresh perspectives to my work. My public speaking, leadership, and organizational skills allow me to excel in team projects, thrive under pressure, and deliver quality results. I aspire to bridge technology and art while gaining industry knowledge to further expand my expertise.
                 </p>
               </div>
 
@@ -123,8 +115,8 @@ const About: React.FC = () => {
                     <div>
                       <h4 className="font-serif font-semibold text-lg text-ink-900 mb-2">Education</h4>
                       <p className="text-ink-600">
-                        Bachelor's in Computer Science Engineering<br />
-                        <span className="text-sm text-ink-500">Mar Baselios College of Engineering and Technology (2021-2025)</span>
+                        Btech in Computer Science Engineering<br />
+                        <span className="text-sm text-ink-500">Mar Baselios College of Engineering and Technology (2023-2027)</span>
                       </p>
                     </div>
                   </div>
@@ -160,7 +152,7 @@ const About: React.FC = () => {
                   </div>
                   <h3 className="font-serif font-semibold text-xl mb-2 text-ink-900">Student Leader</h3>
                   <p className="text-ink-600 text-sm leading-relaxed">
-                    Vice-Chairperson at CSI SB MBCET, guiding teams and organizing impactful technical events.
+                    Actively leading and contributing across multiple student communities through diverse leadership roles.
                   </p>
                 </div>
 
@@ -180,7 +172,7 @@ const About: React.FC = () => {
                   </div>
                   <h3 className="font-serif font-semibold text-xl mb-2 text-ink-900">Creative Mind</h3>
                   <p className="text-ink-600 text-sm leading-relaxed">
-                    Blending technical skills with creative pursuits including dance and design.
+                    Blending technical skills with creative pursuits including arts and design.
                   </p>
                 </div>
               </div>
@@ -198,8 +190,7 @@ const About: React.FC = () => {
                   <Sparkles />
                 </div>
                 <blockquote className="text-2xl md:text-3xl font-serif font-medium text-ink-800 leading-relaxed text-pretty">
-                  "I believe in the power of community and collaboration to drive innovation 
-                  and create meaningful impact in the world of technology."
+                  I believe in the strength of teamwork, consistent dedication, and purposeful innovation that serves both people and the planet."
                 </blockquote>
                 <div className="mt-6 text-coral-500 font-medium">— Vedha Mahadevan</div>
               </div>
