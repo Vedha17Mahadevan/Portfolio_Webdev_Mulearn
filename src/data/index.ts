@@ -111,8 +111,8 @@ export const projects: Project[] = [
     description: 'A basic calculator app with UI built using Tkinter. Implements mathematical functions with clean UX.',
     image: '/images/projects/calc.jpeg',
     tags: ['Python', 'UI/UX', 'Tkinter', 'Maths'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/Scientific-Calculator',
+    link: 'https://github.com/Vedha17Mahadevan/Scientific-Calculator'
   },
   {
     id: 2,
@@ -120,8 +120,8 @@ export const projects: Project[] = [
     description: 'Backend system to manage books and transactions using FastAPI.',
     image: '/images/projects/lib.jpg',
     tags: ['Python', 'FastAPI'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/Library-Management',
+    link: 'https://github.com/Vedha17Mahadevan/Library-Management'
   },
   {
     id: 3,
@@ -129,8 +129,8 @@ export const projects: Project[] = [
     description: 'Java Swing based GUI app to handle user registration, login, and event participation. Connected with SQL DB.',
     image: '/images/projects/event.jpg',
     tags: ['Java', 'SQL', 'Java Swing'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/Event-Registration-System-Java',
+    link: 'https://github.com/Vedha17Mahadevan/Event-Registration-System-Java'
   },
   {
     id: 4,
@@ -138,8 +138,8 @@ export const projects: Project[] = [
     description: 'Web-based BMI calculator with responsive frontend.',
     image: '/images/projects/bmi.jpg',
     tags: ['HTML', 'CSS', 'JS'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/BMI-Calculator',
+    link: 'https://github.com/Vedha17Mahadevan/BMI-Calculator'
   },
   {
     id: 5,
@@ -147,8 +147,8 @@ export const projects: Project[] = [
     description: 'An IoT hardware and simulation-based project for street surveillance and safety.',
     image: '/images/projects/streetSafe.png',
     tags: ['IoT Hardware', 'Simulation'],
-    github: '',
-    link: ''
+    github: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view?utm_content=DAGdMnZuNAQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h31a6108637',
+    link: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view?utm_content=DAGdMnZuNAQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h31a6108637'
   },
   {
     id: 6,
@@ -165,8 +165,8 @@ export const projects: Project[] = [
     description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
     image: '/images/projects/printease.png',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/PrintEase',
+    link: 'https://github.com/Vedha17Mahadevan/PrintEase'
   },
   {
     id: 8,
@@ -174,8 +174,8 @@ export const projects: Project[] = [
     description: 'Web wellness platform with calming visuals and responsive UI.',
     image: '/images/projects/vedayu.jpg',
     tags: ['HTML', 'CSS', 'JS'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25',
+    link: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25'
   },
   {
     id: 9,
@@ -183,8 +183,8 @@ export const projects: Project[] = [
     description: 'An AI-powered ad generator using React and external APIs.',
     image: '/images/projects/easyad.png',
     tags: ['React', 'API'],
-    github: '',
-    link: ''
+    github: 'https://github.com/Vedha17Mahadevan/easyAD.ai',
+    link: 'https://github.com/Vedha17Mahadevan/easyAD.ai'
   }
 ];
 
