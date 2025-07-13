@@ -94,12 +94,14 @@ const Header: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <a
-              href="#resume"
-              className="btn btn-primary"
-            >
-              Download Resume
-            </a>
+        <a
+          href="https://www.canva.com/design/DAGhhM-9ttw/ZwRUtlsbipHtK8IjamiskA/view?utm_content=DAGhhM-9ttw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he00621b3d4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          Download Resume
+        </a>
           </motion.div>
         </nav>
 
@@ -159,12 +161,15 @@ const Header: React.FC = () => {
                 className="pt-4"
               >
                 <a
-                  href="#resume"
+                  href="https://www.canva.com/design/DAGhhM-9ttw/ZwRUtlsbipHtK8IjamiskA/view?utm_content=DAGhhM-9ttw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he00621b3d4"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary w-full justify-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Download Resume
                 </a>
+
               </motion.div>
             </div>
           </motion.div>
