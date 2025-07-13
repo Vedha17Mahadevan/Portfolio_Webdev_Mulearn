@@ -46,8 +46,8 @@ const Hero: React.FC = () => {
               className="flex items-center space-x-3"
             >
               <div className="w-12 h-1 bg-gradient-to-r from-coral-400 to-burnt-500 rounded-full"></div>
-              <span className="text-coral-500 font-medium text-lg tracking-wide">
-                Hello, I'm
+              <span className="text-coral-500 font-medium text-lg tracking-wide leading-relaxed">
+                  Hello, I'm
               </span>
             </motion.div>
 
@@ -107,7 +107,12 @@ const Hero: React.FC = () => {
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </Link>
 
-              <a href="#resume" className="btn btn-secondary group">
+              <a
+                href="https://your-resume-link.com/VedhaMahadevanResume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary group"
+              >
                 Download Resume
                 <Download size={20} className="group-hover:translate-y-0.5 transition-transform" />
               </a>
@@ -164,7 +169,7 @@ const Hero: React.FC = () => {
               <div className="relative z-10">
                 <div className="w-80 h-96 lg:w-96 lg:h-[28rem] rounded-3xl overflow-hidden shadow-soft-lg">
                   <img
-                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src="/PfI.jpg"
                     alt="Vedha Mahadevan"
                     className="w-full h-full object-cover"
                   />
