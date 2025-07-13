@@ -60,7 +60,7 @@ const Header: React.FC = () => {
                   Vedha
                 </span>
                 <div className="text-xs text-ink-600 font-medium tracking-wider uppercase">
-                  Creative Learner, Relentless Doer
+                  Driven by Curiosity
                 </div>
               </div>
             </div>
