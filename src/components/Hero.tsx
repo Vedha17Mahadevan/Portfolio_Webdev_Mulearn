@@ -179,7 +179,7 @@ const Hero: React.FC = () => {
 
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-6 -left-6 w-24 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center"
+                className="absolute -top-6 -left-6 w-24 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
@@ -188,9 +188,9 @@ const Hero: React.FC = () => {
                   <div className="text-xs font-medium text-ink-700">Developer</div>
                 </div>
               </motion.div>
-
+              
               <motion.div
-                className="absolute -bottom-6 -right-6 w-28 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center"
+                className="absolute -bottom-6 -right-6 w-28 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
@@ -199,9 +199,9 @@ const Hero: React.FC = () => {
                   <div className="text-xs font-medium text-ink-700">Leader</div>
                 </div>
               </motion.div>
-
+              
               <motion.div
-                className="absolute top-1/2 -right-12 w-20 h-20 bg-white rounded-2xl shadow-soft flex items-center justify-center"
+                className="absolute top-1/2 -right-12 w-20 h-20 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
                 animate={{ x: [0, 10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
               >
