@@ -106,59 +106,84 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    id: 'proj1',
-    title: 'Scientific Calculator',
-    description: 'An advanced calculator offering equation solving and more functionality for scientific computations.',
-    image: 'https://images.pexels.com/photos/959816/pexels-photo-959816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Python', 'UI/UX', 'Mathematics'],
-    link: 'https://devfolio.co/'
-  },
-  {
-    id: 'proj2',
-    title: 'Library Management System',
-    description: 'A basic library management system implemented using FastAPI, enabling efficient book tracking and user management.',
-    image: 'https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Python', 'FastAPI', 'Database'],
-    link: 'https://devfolio.co/'
-  },
-  {
-    id: 'proj3',
-    title: 'Event Registration System',
-    description: 'A Java-based application for managing event registrations, attendee tracking, and event analytics.',
-    image: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Java', 'UI/UX', 'Database'],
-    link: 'https://devfolio.co/'
-  },
-  {
-    id: 'proj4',
-    title: 'BMI Calculator',
-    description: 'A tool to calculate Body Mass Index with personalized health recommendations based on results.',
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['JavaScript', 'Health', 'UI/UX'],
-    link: 'https://devfolio.co/'
-  },
-  {
-    id: 'proj5',
-    title: 'StreetSafe',
-    description: 'A design project focusing on public safety through innovative technological solutions.',
-    image: 'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['UX Design', 'Safety', 'Prototype'],
+    id: 1,
+    title: 'Calculator App',
+    description: 'A basic calculator app with UI built using Tkinter. Implements mathematical functions with clean UX.',
+    image: '/images/projects/calc.jpg',
+    tags: ['Python', 'UI/UX', 'Tkinter', 'Maths'],
+    github: '',
     link: ''
   },
   {
-    id: 'proj6',
-    title: 'Disaster Management Module',
-    description: 'A module aimed at managing disaster-related data and coordinating response efforts efficiently.',
-    image: 'https://images.pexels.com/photos/2949172/pexels-photo-2949172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Python', 'Data Management', 'Crisis Response'],
-    link: 'https://devfolio.co/'
+    id: 2,
+    title: 'Library Manager',
+    description: 'Backend system to manage books and transactions using FastAPI.',
+    image: '/images/projects/lib.jpg',
+    tags: ['Python', 'FastAPI'],
+    github: '',
+    link: ''
   },
   {
-    id: 'proj7',
-    title: 'Printease',
-    description: 'A project currently in development, focusing on streamlined printing solutions for academic institutions.',
-    image: 'https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['In Development', 'Printing', 'Automation'],
+    id: 3,
+    title: 'Event Registration System',
+    description: 'Java Swing based GUI app to handle user registration, login, and event participation. Connected with SQL DB.',
+    image: '/images/projects/event.jpg',
+    tags: ['Java', 'SQL', 'Java Swing'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 4,
+    title: 'BMI Calculator',
+    description: 'Web-based BMI calculator with responsive frontend.',
+    image: '/images/projects/bmi.jpg',
+    tags: ['HTML', 'CSS', 'JS'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 5,
+    title: 'StreetSafe',
+    description: 'An IoT hardware and simulation-based project for street surveillance and safety.',
+    image: '/images/projects/streetsafe-new.jpg',
+    tags: ['IoT Hardware', 'Simulation'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 6,
+    title: 'Disaster Management Module',
+    description: 'UI/UX and CAD module designed to assist post-disaster assessment and data tracking.',
+    image: '/images/projects/disaster-new.jpg',
+    tags: ['UI/UX', 'CAD'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 7,
+    title: 'PrintEase (In Development)',
+    description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
+    image: '/images/projects/printease-new.jpg',
+    tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 8,
+    title: 'Vedayu',
+    description: 'Web wellness platform with calming visuals and responsive UI.',
+    image: '/images/projects/vedayu.jpg',
+    tags: ['HTML', 'CSS', 'JS'],
+    github: '',
+    link: ''
+  },
+  {
+    id: 9,
+    title: 'EasyAd.AI',
+    description: 'An AI-powered ad generator using React and external APIs.',
+    image: '/images/projects/easyad.jpg',
+    tags: ['React', 'API'],
+    github: '',
     link: ''
   }
 ];
