@@ -36,14 +36,14 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-8"
+            className="space-y-8 mt-6"
           >
             {/* Greeting */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="flex items-center space-x-3"
+              className="flex items-center space-x-3 mt-2"
             >
               <div className="w-12 h-1 bg-gradient-to-r from-coral-400 to-burnt-500 rounded-full"></div>
               <span className="text-coral-500 font-medium text-lg tracking-wide leading-relaxed">
@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
               </Link>
 
               <a
-                href="https://your-resume-link.com/VedhaMahadevanResume.pdf"
+                href="https://www.canva.com/design/DAGhhM-9ttw/ZwRUtlsbipHtK8IjamiskA/view?utm_content=DAGhhM-9ttw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he00621b3d4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary group"
@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.6 }}
-              className="flex flex-wrap gap-8 pt-8"
+              className="flex flex-nowrap gap-8 pt-8"
             >
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-coral-100 rounded-2xl flex items-center justify-center">
