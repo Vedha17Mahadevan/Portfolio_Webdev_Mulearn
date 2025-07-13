@@ -84,7 +84,8 @@ const Hero: React.FC = () => {
               transition={{ delay: 1.2 }}
               className="text-xl text-ink-600 leading-relaxed max-w-2xl text-pretty"
             >
-              I am a motivated Computer Science student with a strong interest in coding (currently familiar with  C, Python, and Java), web development,  problem-solving, and exploring innovative technologies. Alongside my technical pursuits, I am passionate about dance and the arts, which inspire creativity and bring fresh perspectives to my work. My public speaking, leadership, and organizational skills allow me to excel in team projects, thrive under pressure, and deliver quality results. I aspire to bridge technology and art while gaining industry knowledge to further expand my expertise.
+              A passionate student leader and tech enthusiast at Mar Baselios College of Engineering and Technology, 
+              weaving together technology, community, and creativity to build meaningful experiences.
             </motion.p>
 
             {/* Action Buttons */}
@@ -124,15 +125,25 @@ const Hero: React.FC = () => {
               transition={{ delay: 1.6 }}
               className="flex flex-nowrap gap-8 pt-8"
             >
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-coral-100 rounded-2xl flex items-center justify-center">
-                  <Users className="text-coral-600" size={20} />
+                <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-grayblue-100 rounded-2xl flex items-center justify-center">
+                  <Code className="text-grayblue-600" size={20} />
                 </div>
                 <div>
-                  <div className="text-2xl font-serif font-semibold text-ink-900">60+</div>
-                  <div className="text-sm text-ink-600">Developers Mentored</div>
+                  <div className="text-2xl font-serif font-semibold text-ink-900">7+</div>
+                  <div className="text-sm text-ink-600">Projects Built</div>
                 </div>
               </div>
+
+               <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 bg-burnt-100 rounded-2xl flex items-center justify-center">
+                <Download className="text-burnt-600" size={20} />
+              </div>
+              <div>
+                <div className="text-2xl font-serif font-semibold text-ink-900">10+</div>
+                <div className="text-sm text-ink-600">Certifications Earned</div>
+              </div>
+            </div>
               
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-burnt-100 rounded-2xl flex items-center justify-center">
@@ -143,10 +154,20 @@ const Hero: React.FC = () => {
                   <div className="text-sm text-ink-600">Events Organized</div>
                 </div>
               </div>
+
+                <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center">
+                  <Heart className="text-pink-600" size={20} />
+                </div>
+                <div>
+                  <div className="text-2xl font-serif font-semibold text-ink-900">5</div>
+                  <div className="text-sm text-ink-600">Languages Known</div>
+                </div>
+              </div>
               
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-grayblue-100 rounded-2xl flex items-center justify-center">
-                  <Heart className="text-grayblue-600" size={20} />
+                <div className="w-12 h-12 bg-coral-100 rounded-2xl flex items-center justify-center">
+                  <Users className="text-coral-600" size={20} />
                 </div>
                 <div>
                   <div className="text-2xl font-serif font-semibold text-ink-900">5+</div>
@@ -176,54 +197,39 @@ const Hero: React.FC = () => {
                 </div>
               </div>
 
-             {/* Stats */}
+              {/* Floating Elements */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.6 }}
-                className="flex flex-wrap gap-8 pt-8"
+                className="absolute -top-6 -left-6 w-24 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-coral-100 rounded-2xl flex items-center justify-center">
-                    <Sparkles className="text-coral-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-serif font-semibold text-ink-900">15+</div>
-                    <div className="text-sm text-ink-600">Events Organized</div>
-                  </div>
-                </div>
-              
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-burnt-100 rounded-2xl flex items-center justify-center">
-                    <Download className="text-burnt-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-serif font-semibold text-ink-900">10+</div>
-                    <div className="text-sm text-ink-600">Certifications Earned</div>
-                  </div>
-                </div>
-              
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-grayblue-100 rounded-2xl flex items-center justify-center">
-                    <Code className="text-grayblue-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-serif font-semibold text-ink-900">7+</div>
-                    <div className="text-sm text-ink-600">Projects Built</div>
-                  </div>
-                </div>
-              
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center">
-                    <Heart className="text-pink-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-serif font-semibold text-ink-900">5</div>
-                    <div className="text-sm text-ink-600">Languages Known</div>
-                  </div>
+                <div className="text-center">
+                  <Code className="text-coral-500 mx-auto mb-1" size={20} />
+                  <div className="text-xs font-medium text-ink-700">Developer</div>
                 </div>
               </motion.div>
-
+              
+              <motion.div
+                className="absolute -bottom-6 -right-6 w-28 h-24 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              >
+                <div className="text-center">
+                  <Users className="text-burnt-500 mx-auto mb-1" size={20} />
+                  <div className="text-xs font-medium text-ink-700">Leader</div>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                className="absolute top-1/2 -right-12 w-20 h-20 bg-white rounded-2xl shadow-soft flex items-center justify-center z-20"
+                animate={{ x: [0, 10, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              >
+                <div className="text-center">
+                  <Sparkles className="text-grayblue-500 mx-auto mb-1" size={18} />
+                  <div className="text-xs font-medium text-ink-700">Creator</div>
+                </div>
+              </motion.div>
 
               {/* Background Decoration */}
               <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-coral-200/40 to-burnt-200/30 rounded-full blur-2xl -z-10"></div>
