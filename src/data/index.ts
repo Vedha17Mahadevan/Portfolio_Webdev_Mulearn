@@ -145,7 +145,7 @@ export const projects: Project[] = [
     id: 5,
     title: 'StreetSafe',
     description: 'An IoT hardware and simulation-based project for street surveillance and safety.',
-    image: '/images/projects/streetsafe-new.jpg',
+    image: '/images/projects/streetSafe.jpg',
     tags: ['IoT Hardware', 'Simulation'],
     github: '',
     link: ''
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     id: 6,
     title: 'Disaster Management Module',
     description: 'UI/UX and CAD module designed to assist post-disaster assessment and data tracking.',
-    image: '/images/projects/disaster-new.jpg',
+    image: '/images/projects/disaster.jpg',
     tags: ['UI/UX', 'CAD'],
     github: '',
     link: ''
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     id: 7,
     title: 'PrintEase (In Development)',
     description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
-    image: '/images/projects/printease-new.jpg',
+    image: '/images/projects/printease.jpg',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
     github: '',
     link: ''
