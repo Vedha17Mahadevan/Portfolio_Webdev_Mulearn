@@ -69,7 +69,7 @@ const About: React.FC = () => {
                 <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-coral-200/50 to-burnt-200/30 rounded-3xl"></div>
                 <div className="relative z-10 overflow-hidden rounded-3xl shadow-soft-lg">
                   <img 
-                    src="/des.jpg" 
+                    src="/des.JPG" 
                     alt="Vedha Mahadevan" 
                     className="w-full h-80 object-cover"
                   />
@@ -81,14 +81,14 @@ const About: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden shadow-soft">
                   <img 
-                    src="/ml.jpg" 
+                    src="/ml.JPG" 
                     alt="Leadership moment" 
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-soft">
                   <img 
-                    src="/dance.jpg" 
+                    src="/dance.JPG" 
                     alt="Creative work" 
                     className="w-full h-32 object-cover"
                   />
