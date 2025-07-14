@@ -25,12 +25,15 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
+  categories: string[];
   github?: string;
-  link?: string;
-  video?: string;
+  livewebsite?: string;
   presentation?: string;
-  category?: string; // "basic", "software", "hardware", "hackathon"
+  simulation?: string;
+  video?: string;
+  link?: string;
 }
+
 
 export interface Skill {
   name: string;
