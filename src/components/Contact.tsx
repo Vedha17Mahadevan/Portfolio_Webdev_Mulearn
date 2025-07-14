@@ -1,19 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, MapPin, Phone, Linkedin, Github, Globe, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Sparkles, Linkedin, Github, Globe } from 'lucide-react';
 import { socialLinks } from '../data';
 
-const iconMap: Record<string, JSX.Element> = {
-  Linkedin: <Linkedin size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
-  Github: <Github size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
-  Globe: <Globe size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
-  Devfolio: <img src="/contact/devfolio.svg" alt="Devfolio" className="w-6 h-6" />,
-  MuLearn: <img src="/contact/mulearn.svg" alt="MuLearn" className="w-6 h-6" />,
-  HackerRank: <img src="/contact/hackerrank.svg" alt="HackerRank" className="w-6 h-6" />,
-  Medium: <img src="/contact/medium.svg" alt="Medium" className="w-6 h-6" />,
-  Instagram: <img src="/contact/instagram.svg" alt="Instagram" className="w-6 h-6" />,
-  Facebook: <img src="/contact/facebook.svg" alt="Facebook" className="w-6 h-6" />,
+// Custom icons (ensure these paths are correct)
+import { ReactComponent as Devfolio } from '../assets/icons/devfolio.svg';
+import { ReactComponent as MuLearn } from '../assets/icons/mulearn.svg';
+import { ReactComponent as HackerRank } from '../assets/icons/hackerrank.svg';
+import { ReactComponent as Medium } from '../assets/icons/medium.svg';
+import { ReactComponent as Instagram } from '../assets/icons/instagram.svg';
+import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
+
+const iconMap: Record<string, React.ElementType> = {
+  Linkedin,
+  Github,
+  Devfolio,
+  MuLearn,
+  Medium,
+  HackerRank,
+  Instagram,
+  Facebook,
+  Globe,
 };
 
 const Contact: React.FC = () => {
@@ -27,9 +35,9 @@ const Contact: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -37,8 +45,8 @@ const Contact: React.FC = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
   };
 
   return (
@@ -64,7 +72,7 @@ const Contact: React.FC = () => {
           ref={ref}
           variants={containerVariants}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          animate={inView ? 'visible' : 'hidden'}
           className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto"
         >
           {/* Contact Info */}
@@ -88,7 +96,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium text-ink-800 mb-1">Email</h4>
                     <a
-                      href="mailto:vedha@example.com"
+                      href="mailto:vedhamahadevan@gmail.com"
                       className="text-coral-600 hover:text-coral-700 transition-colors font-medium"
                     >
                       vedhamahadevan@gmail.com
@@ -102,14 +110,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-ink-800 mb-1">Location</h4>
-                    <p className="text-ink-600">Kerala, India</p>
-                    <p className="text-sm text-ink-500">Available for remote collaboration</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-grayblue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-grayblue-600" size={20} />
+                    <p className="text-ink-600">India</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +132,7 @@ const Contact: React.FC = () => {
 
               <div className="grid grid-cols-1 gap-4">
                 {socialLinks.map((social) => {
-                  const icon = iconMap[social.icon] || iconMap['Globe'];
+                  const IconComponent = iconMap[social.icon] || Globe;
 
                   return (
                     <motion.a
@@ -144,7 +145,7 @@ const Contact: React.FC = () => {
                       className="flex items-center space-x-4 p-4 rounded-2xl border border-beige-200 hover:border-coral-300 hover:bg-coral-50 transition-all group"
                     >
                       <div className="w-12 h-12 bg-beige-100 group-hover:bg-coral-100 rounded-2xl flex items-center justify-center transition-colors">
-                        {icon}
+                        <IconComponent className="text-ink-600 group-hover:text-coral-600 transition-colors" width={24} height={24} />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-medium text-ink-800 group-hover:text-coral-700 transition-colors">
