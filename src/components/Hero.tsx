@@ -160,8 +160,8 @@ const Hero: React.FC = () => {
                   <Heart className="text-pink-600" size={20} />
                 </div>
                 <div>
-                  <div className="text-2xl font-serif font-semibold text-ink-900">5</div>
-                  <div className="text-sm text-ink-600">Languages Known</div>
+                  <div className="text-2xl font-serif font-semibold text-ink-900">3+</div>
+                  <div className="text-sm text-ink-600">Awards</div>
                 </div>
               </div>
               
