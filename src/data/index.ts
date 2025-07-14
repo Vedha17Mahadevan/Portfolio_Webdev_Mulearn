@@ -165,7 +165,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: 'Disaster Management Module',
-    description: 'UI/UX and CAD module for post-disaster assessment and geodata tracking.',
+    description: 'An advanced terrain-traversing machine for soil texture analysis and geostudies. Designed to assess terrain stability, detect risks, and provide critical data in post-disaster scenarios such as earthquakes and floods.',
     image: '/images/projects/dsaster.jpg',
     tags: ['UI/UX', 'CAD'],
     categories: ['all', 'hardware', 'hackathon'],
@@ -174,7 +174,7 @@ export const projects: Project[] = [
   {
     id: 7,
     title: 'PrintEase (In Development)',
-    description: 'A printing platform using fullstack tech to upload, manage orders, and connect shops.',
+    description: 'PrintEase is a digital platform that streamlines the printing process by enabling users to place print orders, list requirements, make secure payments, and track orders in real-time — all from their device. Designed to eliminate long queues, mismanaged orders, and payment issues, while empowering local print shops with better efficiency.',
     image: '/images/projects/printease.png',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
     categories: ['all', 'software'],
@@ -186,7 +186,7 @@ export const projects: Project[] = [
   {
     id: 8,
     title: 'Vedayu',
-    description: 'A hackathon wellness website with calming design and responsive elements.',
+    description: 'An AI-driven platform to increase awareness and accessibility of AYUSH-based healthcare practices. It offers personalized guidance, trusted natural remedies, and promotes sustainable wellness by bridging traditional medicine with modern technology.',
     image: '/images/projects/vedayu.jpg',
     tags: ['HTML', 'CSS', 'JS', 'Groq API'],
     categories: ['all', 'software', 'hackathon'],
@@ -209,7 +209,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: 'Socio',
-    description: 'Hackathon-built community collaboration platform.',
+    description: 'Socio is an AI-powered system that redefines how digital influence is measured. By filtering out artificial engagement and analyzing long-term credibility and impact, it offers fair, unbiased, and accurate influencer rankings beyond likes and followers.,
     image: '/images/projects/socio.png',
     tags: ['Community', 'Machine Learning'],
     categories: ['all', 'software', 'hackathon'],
@@ -221,7 +221,7 @@ export const projects: Project[] = [
   {
     id: 11,
     title: 'AgroSentry',
-    description: 'IoT + CAD-based soil monitoring and farming system.',
+    description: 'A smart IoT-based monitoring and alert system for agriculture and environmental safety, using ESP32 and ESP32-CAM. Integrates sensors and actuators to provide real-time data, visual feedback, and remote control via Blynk, enabling early threat detection and field automation.',
     image: '/images/projects/agrosentry.png',
     tags: ['IoT', 'Sensors', 'Arduino'],
     categories: ['all', 'hardware'],
@@ -243,6 +243,7 @@ export const skills: Skill[] = [
   // Design Skills
   { name: 'Canva', level: 80, category: 'design' },
   { name: 'Figma', level: 80, category: 'design' },
+  { name: 'Inshot', level: 90, category: 'design' },
   
   // Soft Skills
   { name: 'Leadership', level: 95, category: 'soft' },
