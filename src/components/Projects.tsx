@@ -16,17 +16,14 @@ const Projects: React.FC = () => {
   const categories = ['all', 'basic', 'software', 'hardware', 'hackathon'];
   
   const filteredProjects = filter === 'all'
-  ? projects
-  : projects.filter(project => project.categories?.includes(filter));
-
+    ? projects
+    : projects.filter(project => project.categories?.includes(filter));
 
   const variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.1 }
     }
   };
 
@@ -48,15 +45,14 @@ const Projects: React.FC = () => {
   };
 
   const getCategoryIcon = (category: string) => {
-  switch (category) {
-    case 'basic': return Code;
-    case 'software': return Code;
-    case 'hardware': return Zap;
-    case 'hackathon': return Palette;
-    default: return Code;
-  }
-};
-
+    switch (category) {
+      case 'basic': return Code;
+      case 'software': return Code;
+      case 'hardware': return Zap;
+      case 'hackathon': return Palette;
+      default: return Code;
+    }
+  };
 
   return (
     <section id="projects" className="section bg-white relative overflow-hidden">
@@ -160,19 +156,11 @@ const Projects: React.FC = () => {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Navigation arrows */}
-              <button
-                onClick={prevProject}
-                className="absolute left-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors flex items-center justify-center"
-                aria-label="Previous project"
-              >
+              {/* Navigation Arrows */}
+              <button onClick={prevProject} className="absolute left-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors flex items-center justify-center" aria-label="Previous project">
                 <ChevronLeft size={24} />
               </button>
-              <button
-                onClick={nextProject}
-                className="absolute right-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors flex items-center justify-center"
-                aria-label="Next project"
-              >
+              <button onClick={nextProject} className="absolute right-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors flex items-center justify-center" aria-label="Next project">
                 <ChevronRight size={24} />
               </button>
 
@@ -182,11 +170,9 @@ const Projects: React.FC = () => {
                   <button
                     key={idx}
                     onClick={() => setCurrentProject(idx)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      idx === currentProject ? 'bg-white' : 'bg-white/40'
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-colors ${idx === currentProject ? 'bg-white' : 'bg-white/40'}`}
                     aria-label={`Go to project ${idx + 1}`}
-                  ></button>
+                  />
                 ))}
               </div>
             </div>
@@ -194,12 +180,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Filter Tabs */}
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          className="flex justify-center mb-12"
-        >
+        <motion.div variants={variants} initial="hidden" animate={inView ? "visible" : "hidden"} className="flex justify-center mb-12">
           <div className="flex space-x-2 p-2 bg-beige-100 rounded-2xl">
             {categories.map((category) => {
               const IconComponent = getCategoryIcon(category);
@@ -208,9 +189,7 @@ const Projects: React.FC = () => {
                   key={category}
                   onClick={() => setFilter(category)}
                   className={`flex items-center space-x-2 px-6 py-3 rounded-xl font-medium transition-all ${
-                    filter === category
-                      ? 'bg-white text-coral-600 shadow-soft'
-                      : 'text-ink-600 hover:text-coral-500'
+                    filter === category ? 'bg-white text-coral-600 shadow-soft' : 'text-ink-600 hover:text-coral-500'
                   }`}
                 >
                   <IconComponent size={18} />
@@ -222,12 +201,7 @@ const Projects: React.FC = () => {
         </motion.div>
 
         {/* Project Grid */}
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <motion.div variants={variants} initial="hidden" animate={inView ? "visible" : "hidden"} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div
@@ -237,70 +211,39 @@ const Projects: React.FC = () => {
                 className="card card-hover group h-full flex flex-col"
               >
                 <div className="relative overflow-hidden h-48 rounded-t-3xl">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
-                  {/* Hover overlay */}
-                  {/* Hover overlay */}
+
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex space-x-3 flex-wrap justify-center">
                       {project.livewebsite && (
-                        <a
-                          href={project.livewebsite}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                        >
+                        <a href={project.livewebsite} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors">
                           <ExternalLink size={18} />
                         </a>
                       )}
                       {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                        >
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors">
                           <Github size={18} />
                         </a>
                       )}
                       {project.presentation && (
-                        <a
-                          href={project.presentation}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                        >
+                        <a href={project.presentation} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors">
                           <Code size={18} />
                         </a>
                       )}
                       {project.simulation && (
-                        <a
-                          href={project.simulation}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                        >
+                        <a href={project.simulation} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors">
                           <Zap size={18} />
                         </a>
                       )}
                       {project.video && (
-                        <a
-                          href={project.video}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                        >
+                        <a href={project.video} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors">
                           <Palette size={18} />
                         </a>
                       )}
                     </div>
                   </div>
-
+                </div>
 
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-serif font-semibold text-xl mb-3 text-ink-900 group-hover:text-coral-600 transition-colors">
@@ -312,10 +255,7 @@ const Projects: React.FC = () => {
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.slice(0, 3).map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-beige-100 text-ink-600 border border-beige-200"
-                      >
+                      <span key={idx} className="px-3 py-1 text-xs font-medium rounded-full bg-beige-100 text-ink-600 border border-beige-200">
                         {tag}
                       </span>
                     ))}
@@ -328,12 +268,7 @@ const Projects: React.FC = () => {
 
                   <div className="mt-auto">
                     {project.link && (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-coral-600 font-medium hover:text-coral-700 transition-colors group"
-                      >
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-coral-600 font-medium hover:text-coral-700 transition-colors group">
                         View Details 
                         <ChevronRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
                       </a>
@@ -346,10 +281,7 @@ const Projects: React.FC = () => {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div
-          variants={itemVariants}
-          className="text-center mt-16"
-        >
+        <motion.div variants={itemVariants} className="text-center mt-16">
           <div className="max-w-2xl mx-auto">
             <h3 className="font-serif font-semibold text-2xl text-ink-900 mb-4">
               Interested in collaborating?
@@ -369,3 +301,4 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
