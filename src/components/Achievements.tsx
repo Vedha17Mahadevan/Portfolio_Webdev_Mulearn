@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Award, Trophy, Star, Medal, AlignCenterVertical as Certificate, Users, Zap } from 'lucide-react';
+import { Award, Trophy, Star, Medal, AlignCenterVertical as Certificate } from 'lucide-react';
 
 const Achievements: React.FC = () => {
   const [ref, inView] = useInView({
@@ -194,7 +194,6 @@ const Achievements: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {achievements.map((cert) => {
                 const colorClasses = getColorClasses(cert.color);
-                
                 return (
                   <motion.div
                     key={cert.id}
@@ -204,20 +203,16 @@ const Achievements: React.FC = () => {
                     <div className={`w-20 h-20 ${colorClasses.bg} rounded-2xl flex items-center justify-center mx-auto mb-4 border-2 ${colorClasses.border}`}>
                       <span className="text-3xl">{cert.icon}</span>
                     </div>
-                    
                     <h4 className="font-serif font-semibold text-xl text-ink-900 mb-2">
                       {cert.title}
                     </h4>
-                    
                     <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-3 ${colorClasses.bg} ${colorClasses.text}`}>
                       <Certificate size={14} className="mr-1" />
                       {cert.issuer}
                     </div>
-                    
                     <p className="text-ink-600 mb-4 leading-relaxed">
                       {cert.description}
                     </p>
-                    
                     <div className="text-sm text-ink-500 font-medium">
                       Completed {cert.date}
                     </div>
@@ -228,7 +223,7 @@ const Achievements: React.FC = () => {
           </motion.div>
 
           {/* Recognition Section */}
-          <motion.div variants={itemVariants} className="mb-16">
+          <motion.div variants={itemVariants}>
             <div className="text-center mb-12">
               <h3 className="font-serif font-semibold text-3xl text-ink-900 mb-4">
                 Awards & Recognition
@@ -242,7 +237,6 @@ const Achievements: React.FC = () => {
               {recognitions.map((recognition) => {
                 const colorClasses = getColorClasses(recognition.color);
                 const IconComponent = recognition.icon;
-                
                 return (
                   <motion.div
                     key={recognition.id}
@@ -253,16 +247,13 @@ const Achievements: React.FC = () => {
                       <div className={`w-16 h-16 ${colorClasses.bg} rounded-2xl flex items-center justify-center flex-shrink-0`}>
                         <IconComponent className={colorClasses.text} size={28} />
                       </div>
-                      
                       <div className="flex-1">
                         <h4 className="font-serif font-semibold text-xl text-ink-900 mb-2">
                           {recognition.title}
                         </h4>
-                        
                         <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-3 ${colorClasses.bg} ${colorClasses.text}`}>
                           {recognition.achievement}
                         </div>
-                        
                         <p className="text-ink-600 leading-relaxed">
                           {recognition.description}
                         </p>
@@ -273,49 +264,6 @@ const Achievements: React.FC = () => {
               })}
             </div>
           </motion.div>
-
-          {/* Stats Section */}
-          <motion.div variants={itemVariants} className="text-center">
-            <div className="max-w-4xl mx-auto">
-              <h3 className="font-serif font-semibold text-3xl text-ink-900 mb-8">
-                Impact by Numbers
-              </h3>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-coral-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Certificate className="text-coral-600" size={28} />
-                  </div>
-                  <div className="font-serif font-bold text-4xl text-coral-600 mb-2">6+</div>
-                  <div className="text-ink-600 font-medium">Certifications</div>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-burnt-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Award className="text-burnt-600" size={28} />
-                  </div>
-                  <div className="font-serif font-bold text-4xl text-burnt-600 mb-2">3+</div>
-                  <div className="text-ink-600 font-medium">Awards</div>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-grayblue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Users className="text-grayblue-600" size={28} />
-                  </div>
-                  <div className="font-serif font-bold text-4xl text-grayblue-600 mb-2">500+</div>
-                  <div className="text-ink-600 font-medium">Lives Impacted</div>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-coral-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Zap className="text-coral-600" size={28} />
-                  </div>
-                  <div className="font-serif font-bold text-4xl text-coral-600 mb-2">3+</div>
-                  <div className="text-ink-600 font-medium">Years Learning</div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
@@ -323,3 +271,4 @@ const Achievements: React.FC = () => {
 };
 
 export default Achievements;
+
