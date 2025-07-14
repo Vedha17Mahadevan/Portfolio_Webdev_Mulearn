@@ -188,7 +188,7 @@ export const projects: Project[] = [
     title: 'Vedayu',
     description: 'A hackathon wellness website with calming design and responsive elements.',
     image: '/images/projects/vedayu.jpg',
-    tags: ['HTML', 'CSS', 'JS'],
+    tags: ['HTML', 'CSS', 'JS', 'Groq API'],
     categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25',
     presentation: 'https://www.canva.com/design/DAGhKFoDPQ4/qruGYFn1oY1FTUR6XoHN9Q/view',
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     title: 'Socio',
     description: 'Hackathon-built community collaboration platform.',
     image: '/images/projects/socio.png',
-    tags: ['Community', 'Web Platform'],
+    tags: ['Community', 'Machine Learning'],
     categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/Socio-Auraflix-Final',
     presentation: 'https://www.canva.com/design/DAGieWe5oxg/XvqFXYjCAro1sKnI2i7SJQ/view',
@@ -223,7 +223,7 @@ export const projects: Project[] = [
     title: 'AgroSentry',
     description: 'IoT + CAD-based soil monitoring and farming system.',
     image: '/images/projects/agrosentry.png',
-    tags: ['IoT', 'Sensors', 'CAD'],
+    tags: ['IoT', 'Sensors', 'Arduino'],
     categories: ['all', 'hardware'],
     github: 'https://github.com/Vedha17Mahadevan/AgroSentry',
     video: 'https://drive.google.com/file/d/1VEIFK0epZZ4QUppOdBLWePd41VBoAF-h/view'
@@ -280,7 +280,7 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const aboutMe = {
-  intro: "I'm Vedha Mahadevan, a passionate student leader and tech enthusiast currently pursuing my education at Mar Baselios College of Engineering and Technology."
+  intro: "I'm Vedha Mahadevan, a passionate student leader and tech enthusiast currently pursuing my education at Mar Baselios College of Engineering and Technology.",
   education: "Bachelor's degree in Computer Science Engineering, Mar Baselios College of Engineering and Technology (2023-2027)",
   interests: ["Technology", "Dance", "Design", "Community Building", "Education"]
 };
