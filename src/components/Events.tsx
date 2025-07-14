@@ -42,7 +42,7 @@ const Events: React.FC = () => {
       subtitle: 'Annual General Body Meeting – CSI SB MBCET',
       description:
         'Organized and coordinated the Annual General Body Meeting of CSI SB MBCET, ensuring smooth planning and execution.',
-      image: '/events/agm.jpg',
+      image: '/events/agm.heic',
       period: '2025',
       impact: '25+ Participants',
       category: 'Leadership',
@@ -68,7 +68,7 @@ const Events: React.FC = () => {
       subtitle: 'CSI SB MBCET - Unreal Engine Hands-on',
       description:
         'Organized a game development workshop introducing students to Unreal Engine and interactive game-building fundamentals.',
-      image: '/events/gdw.jpg',
+      image: '/events/gdw.heic',
       period: '2025',
       impact: '40+ Students',
       category: 'Technical',
