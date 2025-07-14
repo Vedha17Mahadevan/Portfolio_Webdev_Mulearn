@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Award, Trophy, Star, AlignCenterVertical as Certificate, Users, Zap } from 'lucide-react';
+import { Award, Trophy, Star, Medal, AlignCenterVertical as Certificate, Users, Zap } from 'lucide-react';
 
 const Achievements: React.FC = () => {
   const [ref, inView] = useInView({
