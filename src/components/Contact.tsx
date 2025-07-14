@@ -4,24 +4,16 @@ import { useInView } from 'react-intersection-observer';
 import { Mail, MapPin, Phone, Linkedin, Github, Globe, Sparkles } from 'lucide-react';
 import { socialLinks } from '../data';
 
-// Custom icons (ensure these are imported correctly)
-import { ReactComponent as Devfolio } from '../assets/icons/devfolio.svg';
-import { ReactComponent as MuLearn } from '../assets/icons/mulearn.svg';
-import { ReactComponent as HackerRank } from '../assets/icons/hackerrank.svg';
-import { ReactComponent as Medium } from '../assets/icons/medium.svg';
-import { ReactComponent as Instagram } from '../assets/icons/instagram.svg';
-import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
-
-const iconMap: Record<string, React.ElementType> = {
-  Linkedin,
-  Github,
-  Devfolio,
-  MuLearn,
-  Medium,
-  HackerRank,
-  Instagram,
-  Facebook,
-  Globe
+const iconMap: Record<string, JSX.Element> = {
+  Linkedin: <Linkedin size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
+  Github: <Github size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
+  Globe: <Globe size={24} className="text-ink-600 group-hover:text-coral-600 transition-colors" />,
+  Devfolio: <img src="/contact/devfolio.svg" alt="Devfolio" className="w-6 h-6" />,
+  MuLearn: <img src="/contact/mulearn.svg" alt="MuLearn" className="w-6 h-6" />,
+  HackerRank: <img src="/contact/hackerrank.svg" alt="HackerRank" className="w-6 h-6" />,
+  Medium: <img src="/contact/medium.svg" alt="Medium" className="w-6 h-6" />,
+  Instagram: <img src="/contact/instagram.svg" alt="Instagram" className="w-6 h-6" />,
+  Facebook: <img src="/contact/facebook.svg" alt="Facebook" className="w-6 h-6" />,
 };
 
 const Contact: React.FC = () => {
@@ -95,11 +87,11 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-ink-800 mb-1">Email</h4>
-                    <a 
-                      href="mailto:vedha@example.com" 
+                    <a
+                      href="mailto:vedha@example.com"
                       className="text-coral-600 hover:text-coral-700 transition-colors font-medium"
                     >
-                      vedha@example.com
+                      vedhamahadevan@gmail.com
                     </a>
                   </div>
                 </div>
@@ -118,11 +110,6 @@ const Contact: React.FC = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-grayblue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <Phone className="text-grayblue-600" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-ink-800 mb-1">Phone</h4>
-                    <p className="text-ink-600">+91 XXXXXXXXXX</p>
-                    <p className="text-sm text-ink-500">Available 9 AM - 6 PM IST</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +131,7 @@ const Contact: React.FC = () => {
 
               <div className="grid grid-cols-1 gap-4">
                 {socialLinks.map((social) => {
-                  const IconComponent = iconMap[social.icon] || Globe;
+                  const icon = iconMap[social.icon] || iconMap['Globe'];
 
                   return (
                     <motion.a
@@ -157,7 +144,7 @@ const Contact: React.FC = () => {
                       className="flex items-center space-x-4 p-4 rounded-2xl border border-beige-200 hover:border-coral-300 hover:bg-coral-50 transition-all group"
                     >
                       <div className="w-12 h-12 bg-beige-100 group-hover:bg-coral-100 rounded-2xl flex items-center justify-center transition-colors">
-                        <IconComponent className="text-ink-600 group-hover:text-coral-600 transition-colors" width={24} height={24} />
+                        {icon}
                       </div>
                       <div className="flex-1">
                         <h4 className="font-medium text-ink-800 group-hover:text-coral-700 transition-colors">
