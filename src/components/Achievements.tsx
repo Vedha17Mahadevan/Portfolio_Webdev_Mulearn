@@ -12,61 +12,61 @@ const Achievements: React.FC = () => {
   const achievements = [
     {
       id: 'cert1',
-      title: 'Google Cloud Platform Fundamentals',
-      issuer: 'Google Cloud',
+      title: 'Programming in Java',
+      issuer: 'NPTEL',
       type: 'Certification',
-      date: '2023',
-      description: 'Core cloud computing concepts and GCP services',
-      icon: '☁️',
+      date: '2024',
+      description: 'Java Programming : Basics to advanced',
+      icon: '☕',
       color: 'coral'
     },
     {
       id: 'cert2',
-      title: 'Python for Data Science',
-      issuer: 'Coursera',
+      title: 'Beginning Python',
+      issuer: 'Infosys Springboard',
       type: 'Certification',
-      date: '2023',
-      description: 'Data analysis and visualization with Python',
+      date: '2024',
+      description: 'Introduction to Python Programming',
       icon: '🐍',
       color: 'burnt'
     },
     {
       id: 'cert3',
-      title: 'UI/UX Design Principles',
-      issuer: 'Adobe',
+      title: 'Fundamentals of Digital Marketing',
+      issuer: 'Google',
       type: 'Certification',
-      date: '2023',
-      description: 'User experience design and interface development',
+      date: '2024',
+      description: 'Understandign Basics of Digital Marketing and SEO',
       icon: '🎨',
       color: 'grayblue'
     },
     {
       id: 'cert4',
-      title: 'Leadership in Technology',
-      issuer: 'Infosys Springboard',
+      title: 'Project Management',
+      issuer: 'LinkedIn',
       type: 'Certification',
-      date: '2022',
-      description: 'Leading technical teams and projects',
+      date: '2025',
+      description: 'Project planning, execution, and team management',
       icon: '👑',
       color: 'coral'
     },
     {
       id: 'cert5',
-      title: 'Web Development Bootcamp',
+      title: 'esponsive Web Design',
       issuer: 'freeCodeCamp',
       type: 'Certification',
-      date: '2022',
-      description: 'Full-stack web development with modern frameworks',
+      date: '2025',
+      description: 'HTML, CSS development with modern frameworks',
       icon: '💻',
       color: 'burnt'
     },
     {
       id: 'cert6',
-      title: 'Project Management Essentials',
-      issuer: 'PMI',
+      title: 'From Learner to Builder: Become an AI AgentArchitect',
+      issuer: 'IBM',
       type: 'Certification',
-      date: '2022',
-      description: 'Project planning, execution, and team management',
+      date: '2025',
+      description: 'Understanding basics of AI',
       icon: '📊',
       color: 'grayblue'
     }
@@ -75,27 +75,35 @@ const Achievements: React.FC = () => {
   const recognitions = [
     {
       id: 'rec1',
-      title: 'Smart India Hackathon 2023',
-      achievement: 'Qualified for Prelims',
-      description: 'Led team through preliminary rounds with innovative disaster management solution',
+      title: 'Karma Hunt’2024',
+      achievement: 'Winner',
+      description: 'Won the first place in the KarmaHunt 2024 organized by Catalyst IEDC in association with MuLearn MBCET',
       icon: Trophy,
       color: 'coral'
     },
     {
       id: 'rec2',
-      title: 'Design: Unlocked 2025',
-      achievement: 'Event Excellence Award',
-      description: 'Recognized for organizing South Kerala\'s largest college design bootcamp',
-      icon: Award,
-      color: 'burnt'
+      title: 'Young Wizard Of Science’2024',
+      achievement: 'Overall Best First-Year Student',
+      description: 'Recognized for consistent performance and active involvement in both academic and community activities during the first year.',
+      icon: Medal,
+      color: 'coral'
     },
     {
       id: 'rec3',
-      title: 'CSI Student Branch',
-      achievement: 'Outstanding Leadership',
-      description: 'Acknowledged for exceptional leadership as Vice-Chairperson',
+      title: 'Smart India Hackathon 2024',
+      achievement: 'Qualified for Prelims',
+      description: 'Supported team through preliminary rounds with innovative disaster management solution',
       icon: Star,
-      color: 'grayblue'
+      color: 'burnt'
+    },
+    {
+      id: 'rec4',
+      title: "Permute'24",
+      achievement: 'Top #12 Karma Miner',
+      description: 'Secured a spot among the top 12 Karma Miners for active participation and consistent contributions during the event.',
+      icon: Award,
+      color: 'burnt'
     }
   ];
 
