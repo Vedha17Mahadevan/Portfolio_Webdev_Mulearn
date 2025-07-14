@@ -13,17 +13,12 @@ const Projects: React.FC = () => {
   const [currentProject, setCurrentProject] = useState(0);
   const [filter, setFilter] = useState('all');
 
-  const categories = ['all', 'development', 'design', 'leadership'];
+  const categories = ['all', 'basic', 'software', 'hardware', 'hackathon'];
   
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(project => 
-        project.tags.some(tag => 
-          filter === 'development' && ['Python', 'Java', 'JavaScript', 'FastAPI'].includes(tag) ||
-          filter === 'design' && ['UX Design', 'UI/UX', 'Design', 'Prototype'].includes(tag) ||
-          filter === 'leadership' && ['Leadership', 'Event Management', 'Community'].includes(tag)
-        )
-      );
+  const filteredProjects = filter === 'all'
+  ? projects
+  : projects.filter(project => project.categories?.includes(filter));
+
 
   const variants = {
     hidden: { opacity: 0 },
@@ -53,13 +48,15 @@ const Projects: React.FC = () => {
   };
 
   const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case 'development': return Code;
-      case 'design': return Palette;
-      case 'leadership': return Zap;
-      default: return Code;
-    }
-  };
+  switch (category) {
+    case 'basic': return Code;
+    case 'software': return Code;
+    case 'hardware': return Zap;
+    case 'hackathon': return Palette;
+    default: return Code;
+  }
+};
+
 
   return (
     <section id="projects" className="section bg-white relative overflow-hidden">
@@ -131,25 +128,30 @@ const Projects: React.FC = () => {
                           </span>
                         ))}
                       </div>
-                      <div className="flex gap-4">
-                        {projects[currentProject].link && (
-                          <a
-                            href={projects[currentProject].link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-primary"
-                          >
-                            View Project <ExternalLink size={18} />
+                      <div className="flex flex-wrap gap-4">
+                        {projects[currentProject].livewebsite && (
+                          <a href={projects[currentProject].livewebsite} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                            Live Website <ExternalLink size={18} />
                           </a>
                         )}
                         {projects[currentProject].github && (
-                          <a
-                            href={projects[currentProject].github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-secondary bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30"
-                          >
+                          <a href={projects[currentProject].github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
                             GitHub <Github size={18} />
+                          </a>
+                        )}
+                        {projects[currentProject].presentation && (
+                          <a href={projects[currentProject].presentation} target="_blank" rel="noopener noreferrer" className="btn btn-secondary bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+                            Presentation <ExternalLink size={18} />
+                          </a>
+                        )}
+                        {projects[currentProject].simulation && (
+                          <a href={projects[currentProject].simulation} target="_blank" rel="noopener noreferrer" className="btn btn-secondary bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+                            Simulation <ExternalLink size={18} />
+                          </a>
+                        )}
+                        {projects[currentProject].video && (
+                          <a href={projects[currentProject].video} target="_blank" rel="noopener noreferrer" className="btn btn-secondary bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+                            Video <ExternalLink size={18} />
                           </a>
                         )}
                       </div>
@@ -243,16 +245,17 @@ const Projects: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
                   {/* Hover overlay */}
+                  {/* Hover overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex space-x-3">
-                      {project.link && (
+                    <div className="flex space-x-3 flex-wrap justify-center">
+                      {project.livewebsite && (
                         <a
-                          href={project.link}
+                          href={project.livewebsite}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
                         >
-                          <ExternalLink size={20} />
+                          <ExternalLink size={18} />
                         </a>
                       )}
                       {project.github && (
@@ -260,14 +263,44 @@ const Projects: React.FC = () => {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
                         >
-                          <Github size={20} />
+                          <Github size={18} />
+                        </a>
+                      )}
+                      {project.presentation && (
+                        <a
+                          href={project.presentation}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                        >
+                          <Code size={18} />
+                        </a>
+                      )}
+                      {project.simulation && (
+                        <a
+                          href={project.simulation}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                        >
+                          <Zap size={18} />
+                        </a>
+                      )}
+                      {project.video && (
+                        <a
+                          href={project.video}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                        >
+                          <Palette size={18} />
                         </a>
                       )}
                     </div>
                   </div>
-                </div>
+
 
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-serif font-semibold text-xl mb-3 text-ink-900 group-hover:text-coral-600 transition-colors">
