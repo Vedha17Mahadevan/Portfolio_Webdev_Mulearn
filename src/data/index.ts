@@ -12,9 +12,15 @@ export const navItems: NavItem[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: 'LinkedIn', url: 'https://linkedin.com/', icon: 'Linkedin' },
-  { name: 'GitHub', url: 'https://github.com/', icon: 'Github' },
-  { name: 'Devfolio', url: 'https://devfolio.co/', icon: 'Globe' },
+  { name: 'LinkedIn', url: 'http://www.linkedin.com/in/vedha-mahadevan', icon: 'Linkedin' },
+  { name: 'GitHub', url: 'https://github.com/Vedha17Mahadevan', icon: 'Github' },
+  { name: 'Devfolio', url: 'https://devfolio.co/@Vedha_Mahadevan', icon: 'Globe' },
+  { name: 'MuLearn', url: 'https://app.mulearn.org/dashboard/profile', icon: 'MuLearn' },
+  { name: 'Medium', url: 'https://medium.com/@vedha2327', icon: 'Medium' },
+  { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/vedha2327', icon: 'Hacckerrank' },
+  { name: 'Instagram', url: 'https://www.instagram.com/vedha_17_mahadevan?igsh=dWl3N2Y0eWtqd2di', icon: 'Facebook' },
+  {  name: 'Facebook', url: 'https://www.facebook.com/share/16bnMiTweo/', icon: 'Instagram' }
+  
 ];
 
 export const experiences: Experience[] = [
@@ -108,47 +114,53 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Calculator App',
-    description: 'A basic calculator app with UI built using Tkinter. Implements mathematical functions with clean UX.',
+    description: 'A basic scientific calculator app with a clean Tkinter UI, supporting essential mathematical functions. Includes a Figma prototype for UI/UX reference.',
     image: '/images/projects/calc.jpeg',
     tags: ['Python', 'UI/UX', 'Tkinter', 'Maths'],
+    categories: ['all', 'basic'],
     github: 'https://github.com/Vedha17Mahadevan/Scientific-Calculator',
-    link: 'https://github.com/Vedha17Mahadevan/Scientific-Calculator'
+    presentation: 'https://www.figma.com/proto/84tEGAafLTHWcM6XNzIPH2/Calculator?page-id=0%3A1&node-id=10-3&viewport=629%2C724%2C0.16&t=ldZI2OzLHnUBHtmB-1&scaling=scale-down&content-scaling=fixed'
   },
   {
     id: 2,
     title: 'Library Manager',
-    description: 'Backend system to manage books and transactions using FastAPI.',
+    description: 'A simple library management system built with Python and FastAPI to handle books and transaction records efficiently.',
     image: '/images/projects/lib.jpg',
     tags: ['Python', 'FastAPI'],
-    github: 'https://github.com/Vedha17Mahadevan/Library-Management',
-    link: 'https://github.com/Vedha17Mahadevan/Library-Management'
+    categories: ['all', 'basic'],
+    github: 'https://github.com/Vedha17Mahadevan/Library-Management'
   },
   {
     id: 3,
     title: 'Event Registration System',
-    description: 'Java Swing based GUI app to handle user registration, login, and event participation. Connected with SQL DB.',
+    description: 'A Java Swing-based GUI application for user registration, login, and event participation, with SQL database integration. Includes both user and admin interfaces.',
     image: '/images/projects/event.jpg',
     tags: ['Java', 'SQL', 'Java Swing'],
+    categories: ['all', 'basic', 'software'],
     github: 'https://github.com/Vedha17Mahadevan/Event-Registration-System-Java',
-    link: 'https://github.com/Vedha17Mahadevan/Event-Registration-System-Java'
+    presentation: 'https://www.canva.com/design/DAGVPvCtWTc/efnhH_l1p06clTNQvF-Jyw/view?utm_content=DAGVPvCtWTc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52e17a93d8'
   },
   {
     id: 4,
     title: 'BMI Calculator',
-    description: 'Web-based BMI calculator with responsive frontend.',
+    description: 'A basic web-based BMI calculator with a simple UI for calculating Body Mass Index.',
     image: '/images/projects/bmi.jpg',
     tags: ['HTML', 'CSS', 'JS'],
+    categories: ['all', 'basic'],
     github: 'https://github.com/Vedha17Mahadevan/BMI-Calculator',
-    link: 'https://github.com/Vedha17Mahadevan/BMI-Calculator'
+    livewebsite: 'https://vedha17mahadevan.github.io/BMI-Calculator/'
   },
   {
     id: 5,
     title: 'StreetSafe',
-    description: 'An IoT hardware and simulation-based project for street surveillance and safety.',
+    description: 'An IoT-based hardware and simulation project for street surveillance and safety, designed to detect broken cables and send alerts for quick response and prevention.',
     image: '/images/projects/streetSafe.png',
     tags: ['IoT Hardware', 'Simulation'],
-    github: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view?utm_content=DAGdMnZuNAQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h31a6108637',
-    link: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view?utm_content=DAGdMnZuNAQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h31a6108637'
+    categories: ['all', 'hardware'],
+    github: 'https://github.com/Vedha17Mahadevan/StreetSafe',
+    simulation: 'https://wokwi.com/projects/411262192596413441',
+    presentation: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view',
+    video: 'https://drive.google.com/file/d/15_y8ux1EIg6PC9M-DPrg0Q6Jx-oaVg81/view?usp=drive_link'
   },
   {
     id: 6,
@@ -156,8 +168,8 @@ export const projects: Project[] = [
     description: 'UI/UX and CAD module designed to assist post-disaster assessment and data tracking.',
     image: '/images/projects/dsaster.jpg',
     tags: ['UI/UX', 'CAD'],
-    github: '',
-    link: ''
+    categories: ['all', 'hardware', 'hackathon'],
+    presentation: 'https://www.figma.com/proto/RNQjfC4XRsnkwwkBgjKvJ4/Panisthalam?page-id=706%3A853&node-id=1166-3&viewport=56%2C368%2C0.07&t=U7kGzORJjEBVRWKn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1166%3A3'
   },
   {
     id: 7,
@@ -165,8 +177,11 @@ export const projects: Project[] = [
     description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
     image: '/images/projects/printease.png',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
+    categories: ['all', 'software'],
     github: 'https://github.com/Vedha17Mahadevan/PrintEase',
-    link: 'https://github.com/Vedha17Mahadevan/PrintEase'
+    presentation: 'https://www.canva.com/design/DAGmA6j0vSM/Mjt2DDNwCnEBuLIbBXr_tg/view?utm_content=DAGmA6j0vSM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8797375c41',
+    livewebsite: 'https://vedha17mahadevan.github.io/PrintEase/',
+    video: 'https://drive.google.com/drive/folders/1xN4pn-ZgyRm2ma9Sw-QudRDm60EVtPDk?usp=drive_link'
   },
   {
     id: 8,
@@ -174,8 +189,11 @@ export const projects: Project[] = [
     description: 'Web wellness platform with calming visuals and responsive UI.',
     image: '/images/projects/vedayu.jpg',
     tags: ['HTML', 'CSS', 'JS'],
+    categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25',
-    link: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25'
+    presentation: 'https://www.canva.com/design/DAGhKFoDPQ4/qruGYFn1oY1FTUR6XoHN9Q/view?utm_content=DAGhKFoDPQ4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd3a8f6e33f',
+    livewebsite: 'https://vedha17mahadevan.github.io/Aeternum-Define25/',
+    video: 'https://www.youtube.com/playlist?list=PLCIFoEyO3D2RTOpR_PI_RCEFnwvwWnKvj'
   },
   {
     id: 9,
@@ -183,26 +201,48 @@ export const projects: Project[] = [
     description: 'An AI-powered ad generator using React and external APIs.',
     image: '/images/projects/easyad.png',
     tags: ['React', 'API'],
+    categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/easyAD.ai',
-    link: 'https://github.com/Vedha17Mahadevan/easyAD.ai'
+    livewebsite: 'https://easyadai.netlify.app/',
+    video: 'https://youtu.be/SFaYZ9zB10M?si=Y_63Er0xjJ4NRGPn'
+  },
+  {
+    id: 10,
+    title: 'Socio',
+    description: 'A community collaboration platform designed as a hackathon project to foster local engagement.',
+    image: '/images/projects/socio.png',
+    tags: ['Community', 'Web Platform'],
+    categories: ['all', 'software', 'hackathon'],
+    github: 'https://github.com/Vedha17Mahadevan/Socio-Auraflix-Final',
+    presentation: 'https://www.canva.com/design/DAGieWe5oxg/XvqFXYjCAro1sKnI2i7SJQ/view?utm_content=DAGieWe5oxg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h757af81a6d',
+    livewebsite: 'https://christoms14.github.io/Socio---Auraflix-Hackathon/',
+    video:'https://youtube.com/playlist?list=PL5cPmFFFJQdUpLWbEY_DwGSdQBxTJbhz8&feature=shared'
+  },
+  {
+    id: 11,
+    title: 'AgroSentry',
+    description: 'An IoT and CAD-based hardware prototype for precision farming and soil monitoring.',
+    image: '/images/projects/agrosentry.png',
+    tags: ['IoT', 'Sensors', 'CAD'],
+    categories: ['all', 'hardware'],
+    github: 'https://github.com/Vedha17Mahadevan/AgroSentry',
+    video: 'https://drive.google.com/file/d/1VEIFK0epZZ4QUppOdBLWePd41VBoAF-h/view?usp=drive_link'
   }
 ];
 
 export const skills: Skill[] = [
   // Technical Skills
-  { name: 'Python', level: 85, category: 'technical' },
-  { name: 'Java', level: 75, category: 'technical' },
-  { name: 'HTML', level: 90, category: 'technical' },
-  { name: 'CSS', level: 85, category: 'technical' },
-  { name: 'FastAPI', level: 80, category: 'technical' },
-  { name: 'JavaScript', level: 70, category: 'technical' },
+  { name: 'C', level: 80, category: 'technical' },
+  { name: 'Python', level: 70, category: 'technical' },
+  { name: 'Java', level: 70, category: 'technical' },
+  { name: 'HTML', level: 60, category: 'technical' },
+  { name: 'CSS', level: 55, category: 'technical' },
+  { name: 'JavaScript', level: 55, category: 'technical' },
   { name: 'Database Management', level: 75, category: 'technical' },
   
   // Design Skills
-  { name: 'Adobe Suite', level: 75, category: 'design' },
-  { name: 'Canva', level: 90, category: 'design' },
-  { name: 'Figma', level: 85, category: 'design' },
-  { name: 'UI/UX Design', level: 80, category: 'design' },
+  { name: 'Canva', level: 80, category: 'design' },
+  { name: 'Figma', level: 80, category: 'design' },
   
   // Soft Skills
   { name: 'Leadership', level: 95, category: 'soft' },
