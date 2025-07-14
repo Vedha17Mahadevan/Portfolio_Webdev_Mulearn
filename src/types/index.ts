@@ -20,13 +20,16 @@ export interface Experience {
 }
 
 export interface Project {
-  id: string;
+  id: number;
   title: string;
   description: string;
   image: string;
   tags: string[];
-  link?: string;
   github?: string;
+  link?: string;
+  video?: string;
+  presentation?: string;
+  category?: string; // "basic", "software", "hardware", "hackathon"
 }
 
 export interface Skill {
