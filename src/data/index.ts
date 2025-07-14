@@ -235,15 +235,15 @@ export const skills: Skill[] = [
   { name: 'C', level: 80, category: 'technical' },
   { name: 'Python', level: 70, category: 'technical' },
   { name: 'Java', level: 70, category: 'technical' },
-  { name: 'HTML', level: 60, category: 'technical' },
-  { name: 'CSS', level: 55, category: 'technical' },
-  { name: 'JavaScript', level: 55, category: 'technical' },
+  { name: 'Web Development HTML/CSS/JS', level: 60, category: 'technical' },
   { name: 'Database Management', level: 75, category: 'technical' },
   
   // Design Skills
-  { name: 'Canva', level: 80, category: 'design' },
-  { name: 'Figma', level: 80, category: 'design' },
+  { name: 'Canva', level: 75, category: 'design' },
+  { name: 'Figma', level: 75, category: 'design' },
   { name: 'Inshot', level: 90, category: 'design' },
+  { name: 'Content Writing', level: 90, category: 'design' },
+  
   
   // Soft Skills
   { name: 'Leadership', level: 95, category: 'soft' },
