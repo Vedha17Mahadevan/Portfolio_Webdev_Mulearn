@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Calendar, Building, Award, Users, Zap, Target } from 'lucide-react';
+import { Calendar, Building, Target, Users, Zap } from 'lucide-react';
 
 const experiences = [
   {
@@ -101,7 +101,9 @@ const Experience: React.FC = () => {
             <span className="text-coral-500 font-medium text-lg tracking-wide uppercase">Experience</span>
             <div className="w-12 h-1 bg-gradient-to-r from-burnt-500 to-coral-400 rounded-full"></div>
           </div>
-          <h2 className="section-title text-center">Leadership Journey & <span className="gradient-text">Professional Growth</span></h2>
+          <h2 className="section-title text-center">
+            Leadership Journey & <span className="gradient-text">Professional Growth</span>
+          </h2>
           <p className="section-subtitle text-center max-w-3xl mx-auto">
             My path through various leadership roles and experiences that have shaped my professional identity.
           </p>
@@ -152,32 +154,6 @@ const Experience: React.FC = () => {
               </motion.div>
             );
           })}
-        </motion.div>
-
-        <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="mt-20 grid grid-cols-2 md:grid-cols-3 gap-8">
-          <motion.div variants={cardVariants} className="text-center">
-            <div className="w-16 h-16 bg-coral-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Users className="text-coral-600" size={28} />
-            </div>
-            <div className="font-serif font-bold text-3xl text-ink-900 mb-1">5+</div>
-            <div className="text-ink-600 font-medium">Leadership Roles</div>
-          </motion.div>
-
-          <motion.div variants={cardVariants} className="text-center">
-            <div className="w-16 h-16 bg-burnt-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Building className="text-burnt-600" size={28} />
-            </div>
-            <div className="font-serif font-bold text-3xl text-ink-900 mb-1">5+</div>
-            <div className="text-ink-600 font-medium">Organizations</div>
-          </motion.div>
-
-          <motion.div variants={cardVariants} className="text-center">
-            <div className="w-16 h-16 bg-grayblue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Award className="text-grayblue-600" size={28} />
-            </div>
-            <div className="font-serif font-bold text-3xl text-ink-900 mb-1">15+</div>
-            <div className="text-ink-600 font-medium">Events Organized</div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
