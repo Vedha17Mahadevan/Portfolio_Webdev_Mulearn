@@ -28,7 +28,7 @@ const Achievements: React.FC = () => {
       date: '2024',
       description: 'Introduction to Python Programming',
       icon: '🐍',
-      color: 'burnt'
+      color: 'grayblue'
     },
     {
       id: 'cert3',
@@ -38,7 +38,7 @@ const Achievements: React.FC = () => {
       date: '2024',
       description: 'Understandign Basics of Digital Marketing and SEO',
       icon: '🎨',
-      color: 'grayblue'
+      color: 'burnt'
     },
     {
       id: 'cert4',
@@ -58,7 +58,7 @@ const Achievements: React.FC = () => {
       date: '2025',
       description: 'HTML, CSS development with modern frameworks',
       icon: '💻',
-      color: 'burnt'
+      color: 'grayblue'
     },
     {
       id: 'cert6',
@@ -68,7 +68,7 @@ const Achievements: React.FC = () => {
       date: '2025',
       description: 'Understanding basics of AI',
       icon: '📊',
-      color: 'grayblue'
+      color: 'burnt'
     }
   ];
 
