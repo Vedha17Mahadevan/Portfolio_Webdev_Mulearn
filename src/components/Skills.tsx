@@ -175,7 +175,7 @@ const Skills: React.FC = () => {
 
           {/* Design Skills */}
           <SkillCategory 
-            title="Design Skills" 
+            title="Creative Skills" 
             skills={designSkills}
             description="Creative & Visual Design"
             color="design"
@@ -184,7 +184,7 @@ const Skills: React.FC = () => {
 
           {/* Soft Skills */}
           <SkillCategory 
-            title="Leadership Skills" 
+            title="Soft Skills" 
             skills={softSkills}
             description="Communication & Management"
             color="soft"
@@ -210,13 +210,12 @@ const Skills: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
+              { name: 'C', icon: '⚡', category: 'technical' },
               { name: 'Python', icon: '🐍', category: 'technical' },
               { name: 'Java', icon: '☕', category: 'technical' },
-              { name: 'JavaScript', icon: '⚡', category: 'technical' },
-              { name: 'HTML/CSS', icon: '🎨', category: 'technical' },
-              { name: 'FastAPI', icon: '🚀', category: 'technical' },
+              { name: 'HTML/CSS/JS', icon: '🎨', category: 'technical' },
+              { name: 'Github', icon: '🚀', category: 'technical' },
               { name: 'Figma', icon: '🎯', category: 'design' },
-              { name: 'Adobe Suite', icon: '🎪', category: 'design' },
               { name: 'Canva', icon: '✨', category: 'design' },
               { name: 'Leadership', icon: '👑', category: 'soft' },
               { name: 'Public Speaking', icon: '🎤', category: 'soft' },
@@ -252,9 +251,7 @@ const Skills: React.FC = () => {
               My Approach to Learning & Growth
             </h3>
             <p className="text-xl text-ink-600 leading-relaxed mb-8">
-              I believe in continuous learning and the power of combining technical skills with creative thinking. 
-              Every project is an opportunity to grow, every challenge a chance to innovate, and every collaboration 
-              a step towards building something meaningful.
+              I believe in bridging the gap between bookish knowledge and real-world application. By connecting technical understanding with creative exploration, we unlock the true potential of what we learn. It's only when concepts are applied practically and creatively that they become meaningful, impactful, and truly our own.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
