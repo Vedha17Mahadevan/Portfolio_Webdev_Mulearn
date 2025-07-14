@@ -209,7 +209,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: 'Socio',
-    description: 'Socio is an AI-powered system that redefines how digital influence is measured. By filtering out artificial engagement and analyzing long-term credibility and impact, it offers fair, unbiased, and accurate influencer rankings beyond likes and followers.,
+    description: 'Socio is an AI-powered system that redefines how digital influence is measured. By filtering out artificial engagement and analyzing long-term credibility and impact, it offers fair, unbiased, and accurate influencer rankings beyond likes and followers.',
     image: '/images/projects/socio.png',
     tags: ['Community', 'Machine Learning'],
     categories: ['all', 'software', 'hackathon'],
