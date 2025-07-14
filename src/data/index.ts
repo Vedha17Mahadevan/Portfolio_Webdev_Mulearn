@@ -17,11 +17,11 @@ export const socialLinks: SocialLink[] = [
   { name: 'Devfolio', url: 'https://devfolio.co/@Vedha_Mahadevan', icon: 'Globe' },
   { name: 'MuLearn', url: 'https://app.mulearn.org/dashboard/profile', icon: 'MuLearn' },
   { name: 'Medium', url: 'https://medium.com/@vedha2327', icon: 'Medium' },
-  { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/vedha2327', icon: 'Hacckerrank' },
-  { name: 'Instagram', url: 'https://www.instagram.com/vedha_17_mahadevan?igsh=dWl3N2Y0eWtqd2di', icon: 'Facebook' },
-  {  name: 'Facebook', url: 'https://www.facebook.com/share/16bnMiTweo/', icon: 'Instagram' }
-  
+  { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/vedha2327', icon: 'HackerRank' },
+  { name: 'Instagram', url: 'https://www.instagram.com/vedha_17_mahadevan?igsh=dWl3N2Y0eWtqd2di', icon: 'Instagram' },
+  { name: 'Facebook', url: 'https://www.facebook.com/share/16bnMiTweo/', icon: 'Facebook' }
 ];
+
 
 export const experiences: Experience[] = [
   {
@@ -114,17 +114,17 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Calculator App',
-    description: 'A basic scientific calculator app with a clean Tkinter UI, supporting essential mathematical functions. Includes a Figma prototype for UI/UX reference.',
+    description: 'A basic scientific calculator app with a clean Tkinter UI, supporting essential mathematical functions. Includes a Figma prototype.',
     image: '/images/projects/calc.jpeg',
     tags: ['Python', 'UI/UX', 'Tkinter', 'Maths'],
     categories: ['all', 'basic'],
     github: 'https://github.com/Vedha17Mahadevan/Scientific-Calculator',
-    presentation: 'https://www.figma.com/proto/84tEGAafLTHWcM6XNzIPH2/Calculator?page-id=0%3A1&node-id=10-3&viewport=629%2C724%2C0.16&t=ldZI2OzLHnUBHtmB-1&scaling=scale-down&content-scaling=fixed'
+    presentation: 'https://www.figma.com/proto/84tEGAafLTHWcM6XNzIPH2/Calculator?page-id=0%3A1&node-id=10-3'
   },
   {
     id: 2,
     title: 'Library Manager',
-    description: 'A simple library management system built with Python and FastAPI to handle books and transaction records efficiently.',
+    description: 'A simple library management system built with Python and FastAPI.',
     image: '/images/projects/lib.jpg',
     tags: ['Python', 'FastAPI'],
     categories: ['all', 'basic'],
@@ -133,17 +133,17 @@ export const projects: Project[] = [
   {
     id: 3,
     title: 'Event Registration System',
-    description: 'A Java Swing-based GUI application for user registration, login, and event participation, with SQL database integration. Includes both user and admin interfaces.',
+    description: 'A Java Swing GUI for login, sign-up, and event participation.',
     image: '/images/projects/event.jpg',
     tags: ['Java', 'SQL', 'Java Swing'],
     categories: ['all', 'basic', 'software'],
     github: 'https://github.com/Vedha17Mahadevan/Event-Registration-System-Java',
-    presentation: 'https://www.canva.com/design/DAGVPvCtWTc/efnhH_l1p06clTNQvF-Jyw/view?utm_content=DAGVPvCtWTc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52e17a93d8'
+    presentation: 'https://www.canva.com/design/DAGVPvCtWTc/efnhH_l1p06clTNQvF-Jyw'
   },
   {
     id: 4,
     title: 'BMI Calculator',
-    description: 'A basic web-based BMI calculator with a simple UI for calculating Body Mass Index.',
+    description: 'A basic BMI calculator with HTML/CSS/JS and responsive UI.',
     image: '/images/projects/bmi.jpg',
     tags: ['HTML', 'CSS', 'JS'],
     categories: ['all', 'basic'],
@@ -153,80 +153,80 @@ export const projects: Project[] = [
   {
     id: 5,
     title: 'StreetSafe',
-    description: 'An IoT-based hardware and simulation project for street surveillance and safety, designed to detect broken cables and send alerts for quick response and prevention.',
+    description: 'IoT-based safety system for detecting broken cables with alerts.',
     image: '/images/projects/streetSafe.png',
     tags: ['IoT Hardware', 'Simulation'],
     categories: ['all', 'hardware'],
     github: 'https://github.com/Vedha17Mahadevan/StreetSafe',
     simulation: 'https://wokwi.com/projects/411262192596413441',
     presentation: 'https://www.canva.com/design/DAGdMnZuNAQ/kwCnhujaYK8Kc97jpGSrgA/view',
-    video: 'https://drive.google.com/file/d/15_y8ux1EIg6PC9M-DPrg0Q6Jx-oaVg81/view?usp=drive_link'
+    video: 'https://drive.google.com/file/d/15_y8ux1EIg6PC9M-DPrg0Q6Jx-oaVg81/view'
   },
   {
     id: 6,
     title: 'Disaster Management Module',
-    description: 'UI/UX and CAD module designed to assist post-disaster assessment and data tracking.',
+    description: 'UI/UX and CAD module for post-disaster assessment and geodata tracking.',
     image: '/images/projects/dsaster.jpg',
     tags: ['UI/UX', 'CAD'],
     categories: ['all', 'hardware', 'hackathon'],
-    presentation: 'https://www.figma.com/proto/RNQjfC4XRsnkwwkBgjKvJ4/Panisthalam?page-id=706%3A853&node-id=1166-3&viewport=56%2C368%2C0.07&t=U7kGzORJjEBVRWKn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1166%3A3'
+    presentation: 'https://www.figma.com/proto/RNQjfC4XRsnkwwkBgjKvJ4/Panisthalam?page-id=706%3A853'
   },
   {
     id: 7,
     title: 'PrintEase (In Development)',
-    description: 'A platform to upload files, manage printing, and track orders. Designed with fullstack web technologies.',
+    description: 'A printing platform using fullstack tech to upload, manage orders, and connect shops.',
     image: '/images/projects/printease.png',
     tags: ['UI/UX', 'HTML', 'CSS', 'JS', 'MongoDB'],
     categories: ['all', 'software'],
     github: 'https://github.com/Vedha17Mahadevan/PrintEase',
-    presentation: 'https://www.canva.com/design/DAGmA6j0vSM/Mjt2DDNwCnEBuLIbBXr_tg/view?utm_content=DAGmA6j0vSM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8797375c41',
+    presentation: 'https://www.canva.com/design/DAGmA6j0vSM/Mjt2DDNwCnEBuLIbBXr_tg/view',
     livewebsite: 'https://vedha17mahadevan.github.io/PrintEase/',
-    video: 'https://drive.google.com/drive/folders/1xN4pn-ZgyRm2ma9Sw-QudRDm60EVtPDk?usp=drive_link'
+    video: 'https://drive.google.com/drive/folders/1xN4pn-ZgyRm2ma9Sw-QudRDm60EVtPDk'
   },
   {
     id: 8,
     title: 'Vedayu',
-    description: 'Web wellness platform with calming visuals and responsive UI.',
+    description: 'A hackathon wellness website with calming design and responsive elements.',
     image: '/images/projects/vedayu.jpg',
     tags: ['HTML', 'CSS', 'JS'],
     categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/Aeternum-Define25',
-    presentation: 'https://www.canva.com/design/DAGhKFoDPQ4/qruGYFn1oY1FTUR6XoHN9Q/view?utm_content=DAGhKFoDPQ4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd3a8f6e33f',
+    presentation: 'https://www.canva.com/design/DAGhKFoDPQ4/qruGYFn1oY1FTUR6XoHN9Q/view',
     livewebsite: 'https://vedha17mahadevan.github.io/Aeternum-Define25/',
     video: 'https://www.youtube.com/playlist?list=PLCIFoEyO3D2RTOpR_PI_RCEFnwvwWnKvj'
   },
   {
     id: 9,
     title: 'EasyAd.AI',
-    description: 'An AI-powered ad generator using React and external APIs.',
+    description: 'React-based AI ad generator app using OpenAI APIs.',
     image: '/images/projects/easyad.png',
     tags: ['React', 'API'],
     categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/easyAD.ai',
     livewebsite: 'https://easyadai.netlify.app/',
-    video: 'https://youtu.be/SFaYZ9zB10M?si=Y_63Er0xjJ4NRGPn'
+    video: 'https://youtu.be/SFaYZ9zB10M'
   },
   {
     id: 10,
     title: 'Socio',
-    description: 'A community collaboration platform designed as a hackathon project to foster local engagement.',
+    description: 'Hackathon-built community collaboration platform.',
     image: '/images/projects/socio.png',
     tags: ['Community', 'Web Platform'],
     categories: ['all', 'software', 'hackathon'],
     github: 'https://github.com/Vedha17Mahadevan/Socio-Auraflix-Final',
-    presentation: 'https://www.canva.com/design/DAGieWe5oxg/XvqFXYjCAro1sKnI2i7SJQ/view?utm_content=DAGieWe5oxg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h757af81a6d',
+    presentation: 'https://www.canva.com/design/DAGieWe5oxg/XvqFXYjCAro1sKnI2i7SJQ/view',
     livewebsite: 'https://christoms14.github.io/Socio---Auraflix-Hackathon/',
-    video:'https://youtube.com/playlist?list=PL5cPmFFFJQdUpLWbEY_DwGSdQBxTJbhz8&feature=shared'
+    video: 'https://youtube.com/playlist?list=PL5cPmFFFJQdUpLWbEY_DwGSdQBxTJbhz8'
   },
   {
     id: 11,
     title: 'AgroSentry',
-    description: 'An IoT and CAD-based hardware prototype for precision farming and soil monitoring.',
+    description: 'IoT + CAD-based soil monitoring and farming system.',
     image: '/images/projects/agrosentry.png',
     tags: ['IoT', 'Sensors', 'CAD'],
     categories: ['all', 'hardware'],
     github: 'https://github.com/Vedha17Mahadevan/AgroSentry',
-    video: 'https://drive.google.com/file/d/1VEIFK0epZZ4QUppOdBLWePd41VBoAF-h/view?usp=drive_link'
+    video: 'https://drive.google.com/file/d/1VEIFK0epZZ4QUppOdBLWePd41VBoAF-h/view'
   }
 ];
 
@@ -280,8 +280,7 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const aboutMe = {
-  intro: "I'm Vedha Mahadevan, a passionate student leader and tech enthusiast currently pursuing my education at Mar Baselios College of Engineering and Technology.",
-  description: "As a multifaceted individual, I balance my technical pursuits with creative endeavors. My journey encompasses leadership roles in various organizations, technical project development, and a constant quest for learning and growth. I believe in the power of community and collaboration to drive innovation and create meaningful impact.",
-  education: "Bachelor's degree in Computer Science Engineering, Mar Baselios College of Engineering and Technology (2021-2025)",
+  intro: "I'm Vedha Mahadevan, a passionate student leader and tech enthusiast currently pursuing my education at Mar Baselios College of Engineering and Technology."
+  education: "Bachelor's degree in Computer Science Engineering, Mar Baselios College of Engineering and Technology (2023-2027)",
   interests: ["Technology", "Dance", "Design", "Community Building", "Education"]
 };
