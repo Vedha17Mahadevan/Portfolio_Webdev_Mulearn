@@ -52,7 +52,7 @@ const Achievements: React.FC = () => {
     },
     {
       id: 'cert5',
-      title: 'esponsive Web Design',
+      title: 'Responsive Web Design',
       issuer: 'freeCodeCamp',
       type: 'Certification',
       date: '2025',
